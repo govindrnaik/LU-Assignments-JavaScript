@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>LU Assignment 3</h1>
+        <h2>Get current date in dd/mm/yyyy</h2>
+        <p id='sample'></p>
+                     <script>
+                     var today = new Date();
+                     var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                     document.getElementById('sample').innerHTML = date;
+                     </script>
+                </body>
+</html>
