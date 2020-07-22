@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <h1>Day 6 Assignment 1</h1>
+    <h2>Q1</h2>
+    <script type="text/javascript">
+        var c = ["blue", "black", "yellow", "red"];
+      
+        function changeColor() {
+          setTimeout(function loop() {
+            document.bgColor = c.shift();
+            if (c.length) {
+              setTimeout(loop, 5000);
+            }
+          }, 5000);
+        } 
+    
+      
+        function start() {
+          setInterval(changeColor(), 20000);
+        }
+      </script>
+      <body onload="start()">
+      </body>
+</body>
+</html>

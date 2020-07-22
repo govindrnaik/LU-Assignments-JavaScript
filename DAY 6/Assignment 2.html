@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Assignment 3</title>
+		<h1>Day 6 Assignment 3</h1>
+		<h2>Q3</h2><script type="text/javascript">
+			function printTable(){
+				var num;
+				num=Number(document.getElementById('txtNumber').value);
+				for(var i=1; i<=10; i++){
+					var pTag= document.getElementById('pPrint');
+					pTag.innerHTML += (num*i) + "<br/>" 
+				}
+			}
+		</script>
+	</head>
+
+	<body style="text-align: center;">
+		<h1>JavaScript - Function to Display Table of an entered Number.</h1>
+		<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print Table." onclick='printTable()'/>
+		<!--print numbers-->
+		<p id="pPrint"></p>
+	</body>
+</html>
