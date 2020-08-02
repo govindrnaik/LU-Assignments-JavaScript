@@ -1,5 +1,5 @@
-let d = prompt("ef","feb 8, 2021")
-var countDownDate = new Date(`${d} 00:00:00`).getTime();
+let d = prompt("Enter the date and time till what you want to countdown","feb 8, 2021  5:00")
+var countDownDate = new Date(d).getTime();
 
 console.log();
 var x = setInterval(function() {
@@ -14,8 +14,8 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("stopwatch").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("stopwatch").innerHTML = days + "d  " + hours + "h "
+  + minutes + "m  " + seconds + "s  ";
 
   if (distance < 0) {
     clearInterval(x);
